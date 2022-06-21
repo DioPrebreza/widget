@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/button.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<!-- Style for the dummie website -->
+<style>
+    .lhn-dummy-website {
+        padding: 20px;
+        height: 100vh;
+        width: 100%;
+        background-image: url('https://images.pexels.com/photos/3635300/pexels-photo-3635300.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .lhn-dummy-website-nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .lhn-dummy-website-nav-logo {
+        font-size: 40px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .lhn-dummy-website-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        color: #fff;
+        font-size: 120px;
+        font-weight: 600;
+        text-decoration: underline;
+        transform: translateY(-100px);
+    }
+</style>
+
+<body>
+    <!-- Dummy Website, used only for testing -->
+    <div class="lhn-dummy-website">
+        <nav class="lhn-dummy-website-nav">
+            <div class="lhn-dummy-website-nav-logo">Logo goes here</div>
+        </nav>
+        <main class="lhn-dummy-website-main">
+            <h3>Coming Soon</h3>
+        </main>
+    </div>
+
+    <!-- Chat -->
+    <div class="lhn-chat">
+        <div class="lhn-chat-container">
+            <!-- Primary Window -->
+            <div class="lhn-chat-container-chatbox">
+                <!-- Classic Mode -->
+                <div class="lhn-chat-container-chatbox-classic lhn-current-mode">
+                    <!-- Header -->
+                    <div class="lhn-chat-container-chatbox-classic-header">
+                        <!-- Top Header -->
+                        <div class="lhn-chat-container-chatbox-classic-header-top">
+                            <!-- Chat Title -->
+                            <div class="lhn-chat-container-chatbox-classic-header-top-title">
+                                <img src="./img/chat-logo.svg" alt="">
+                                <h1>Live Chat</h1>
+                            </div>
+                            <!-- Chat Properties / Where you change the mode -->
+                            <div
+                                class="lhn-chat-container-chatbox-classic-header-top-properties lhn-chat-properties-btn">
+                                <div class="lhn-chat-container-chatbox-classic-header-top-properties-dot"></div>
+                                <div class="lhn-chat-container-chatbox-classic-header-top-properties-dot"></div>
+                                <div class="lhn-chat-container-chatbox-classic-header-top-properties-dot"></div>
+
+                                <!-- Chat Properties, options to choose -->
+                                <div
+                                    class="lhn-chat-container-chatbox-classic-header-top-properties-menu lhn-chat-properties-menu">
+                                    <div class="lhn-chat-container-chatbox-classic-header-top-properties-menu-element">
+                                        <img src="./img/compact.svg" alt="">
+                                        <span>Switch to Preview</span>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-header-top-properties-menu-element">
+                                        <img src="./img/compact.svg" alt="">
+                                        <span>Switch to Column</span>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-header-top-properties-menu-element">
+                                        <img src="./img/compact.svg" alt="">
+                                        <span>Switch to Full Screen</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lhn-chat-container-chatbox-classic-header-bottom">
+                            <p>We're standing by to answer all your questions right now.</p>
+                        </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="lhn-chat-container-chatbox-classic-tabs">
+                        <!-- Chat Body -->
+                        <div class="lhn-chat-container-chatbox-classic-tabs-chat lhn-chat-container-chatbox-classic-tabs-content lhn-active"
+                            id="lhn-chat">
+                            <!-- Chat Body Header -->
+                            <div class="lhn-chat-container-chatbox-classic-tabs-chat-header">
+                                <!-- Top Header -->
+                                <div class="lhn-chat-container-chatbox-classic-tabs-chat-header-top">
+                                    <!-- Chat Status -->
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-header-top-status"></div>
+                                    <!-- Chat Title -->
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-header-top-title">
+                                        LiveHelpNow</div>
+                                </div>
+
+                                <!-- Bottom Header -->
+                                <div class="lhn-chat-container-chatbox-classic-tabs-chat-header-bottom">
+                                    Connected to an agent
+                                </div>
+                            </div>
+
+                            <!-- Chat Body Main -->
+                            <div class="lhn-chat-container-chatbox-classic-tabs-chat-main lhn-inbox">
+                                <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            Hello there!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:30 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/kenobi.png" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-main-message lhn-message-reply">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            General Kenobi!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:32 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/grievous.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            Hello there!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:30 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/kenobi.png" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-main-message lhn-message-reply">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            General Kenobi!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:32 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/grievous.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            Hello there!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:30 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/kenobi.png" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-main-message lhn-message-reply">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            General Kenobi!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:32 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/grievous.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            Hello there!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:30 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/kenobi.png" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-main-message lhn-message-reply">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            General Kenobi!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:32 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/grievous.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            Hello there!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:30 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/kenobi.png" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-main-message lhn-message-reply">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            General Kenobi!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:32 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/grievous.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            Hello there!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:30 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/kenobi.png" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-main-message lhn-message-reply">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-content">
+                                            General Kenobi!</div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-text-time">
+                                            10:32 AM</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/grievous.webp" alt="">
+                                    </div>
+                                </div>
+                                <div
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-main-message lhn-message-writing lhn-message-reply">
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-writing-text">
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-writing-text-dot">
+                                        </div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-writing-text-dot">
+                                        </div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-writing-text-dot">
+                                        </div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-classic-tabs-chat-main-message-img">
+                                        <img src="./img/grievous.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chat Body Footer -->
+                            <div class="lhn-chat-container-chatbox-classic-tabs-chat-form">
+                                <input type="text" placeholder="Type something..."
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-form-input" value="">
+                                <div
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-form-emojis lhn-emojis-btn lhn-chat-container-chatbox-classic-tabs-chat-form-btn">
+                                    <img src="./img/smiley.svg" alt="">
+                                </div>
+                                <div
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-form-emojis-container lhn-emojis-container">
+                                </div>
+                                <button type="submit"
+                                    class="lhn-chat-container-chatbox-classic-tabs-chat-form-submit lhn-chat-container-chatbox-classic-tabs-chat-form-btn">
+                                    <img src="./img/submit-arrow.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- FAQs Body -->
+                        <div class="lhn-chat-container-chatbox-classic-tabs-faq lhn-chat-container-chatbox-classic-tabs-content"
+                            id="lhn-faqs">
+                            This is FAQ
+                        </div>
+
+                        <!-- Tickets Body -->
+                        <div class="lhn-chat-container-chatbox-classic-tabs-ticket lhn-chat-container-chatbox-classic-tabs-content"
+                            id="lhn-tickets">
+                            This is Ticket
+                        </div>
+
+                        <!-- Callback Body -->
+                        <div class="lhn-chat-container-chatbox-classic-tabs-callback lhn-chat-container-chatbox-classic-tabs-content"
+                            id="lhn-callback">
+                            This is Callback
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="lhn-chat-container-chatbox-classic-footer">
+                        <div class="lhn-chat-container-chatbox-classic-footer-tabs">
+                            <div class="lhn-chat-container-chatbox-classic-footer-tabs-tab lhn-active-tab">Chat</div>
+                            <div class="lhn-chat-container-chatbox-classic-footer-tabs-tab">Faqs</div>
+                            <div class="lhn-chat-container-chatbox-classic-footer-tabs-tab">Tickets</div>
+                            <div class="lhn-chat-container-chatbox-classic-footer-tabs-tab">Callback</div>
+                        </div>
+                        <div class="lhn-chat-container-chatbox-classic-footer-copyright">
+                            <button class="lhn-additional-btn">additional</button>
+                            <div>Powered by <a href="https://livehelpnow.net/" target="_blank"><img
+                                        src="./img/lhn-logo.svg" alt="">LiveHelpNow</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preview Mode -->
+                <div class="lhn-chat-container-chatbox-preview">
+
+                </div>
+
+                <!-- Column Mode -->
+                <div class="lhn-chat-container-chatbox-column">
+
+                </div>
+
+                <!-- Full Screen Mode -->
+                <div class="lhn-chat-container-chatbox-fullsc">
+
+                </div>
+            </div>
+            <!-- Additional Window -->
+            <div class="lhn-chat-container-additional lhn-show-additional">
+                <!-- Classic Mode -->
+                <div class="lhn-chat-container-additional-classic lhn-current-additional-mode">
+                    <!-- Additional Header -->
+                    <div class="lhn-chat-container-additional-classic-header">
+                        <!-- Top Header -->
+                        <div class="lhn-chat-container-additional-classic-header-top">
+                            <div class="lhn-chat-container-additional-classic-header-top-title">
+                                <h1>Credit Card</h1>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Header -->
+                        <div class="lhn-chat-container-additional-classic-header-bottom">
+                            <p>Please fill out the following information.</p>
+                            <p>All data is encrypted and secured</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional Body -->
+                    <div class="lhn-chat-container-additional-classic-body">
+                        <div class="lhn-chat-container-additional-classic-body-header">
+                            <h2>Credit card information</h2>
+                        </div>
+                        <div class="lhn-chat-container-additional-classic-body-form">
+                            <!-- Input Forms -->
+                            <div class="lhn-chat-container-additional-classic-body-form-input">
+                                <label for="lhn-cardName">Card Name</label>
+                                <input type="text" id="lhn-cardName" placeholder="Add card name">
+                            </div>
+                            <div class="lhn-chat-container-additional-classic-body-form-input">
+                                <label for="lhn-cardAddress1">Card Address Line 1</label>
+                                <input type="text" id="lhn-cardAddress1" placeholder="Card Address Line 1">
+                            </div>
+                            <div class="lhn-chat-container-additional-classic-body-form-input">
+                                <label for="lhn-cardAddress2">Card Address Line 2</label>
+                                <input type="text" id="lhn-cardAddress2" placeholder="Card Address Line 2">
+                            </div>
+                            <div class="lhn-chat-container-additional-classic-body-form-input">
+                                <label for="lhn-city">City</label>
+                                <input type="text" id="lhn-city" placeholder="Enter city">
+                            </div>
+
+                            <!-- Submit Buttons -->
+                            <div class="lhn-chat-container-additional-classic-body-form-btns">
+                                <div class="lhn-chat-container-additional-classic-body-form-btns-btn lhn-chat-container-additional-classic-body-form-btns-submit">
+                                    <button type="submit">Submit</button>
+                                </div>
+                                <div class="lhn-chat-container-additional-classic-body-form-btns-btn lhn-chat-container-additional-classic-body-form-btns-cancel">
+                                    <button class="lhn-chat-container-additional-classic-body-form-btns-cancel-button">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Footer -->
+                    <div class="lhn-chat-container-additional-classic-footer">
+                        <div>Powered by <a href="https://livehelpnow.net/" target="_blank"><img src="./img/lhn-logo.svg"
+                                    alt="LiveHelpNow Logo">LiveHelpNow</a></div>
+                    </div>
+                </div>
+                <!-- Column Mode -->
+                <!-- <div class="lhn-chat-container-additional-column"></div> -->
+            </div>
+        </div>
+        <div class="lhn-chat-btn">
+            <button>
+                <img src="./img/start-1.svg" alt="">
+            </button>
+            <div class="lhn-chat-btn-notification lhn-chat-btn-entries">7</div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/emoji.js" type="module"></script>
+<script src="./js/tabs.js"></script>
+
+</html>

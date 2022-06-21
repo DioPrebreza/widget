@@ -1,0 +1,41 @@
+.lhn-chat-btn {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: #1587B9;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 27px;
+        }
+    }
+    &-notification {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #00DF6F;
+        border-radius: 50%;
+        top: -5px;
+        right: -5px;
+        user-select: none;
+    }
+    &-entries {
+        background-color: #FF0000;
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
