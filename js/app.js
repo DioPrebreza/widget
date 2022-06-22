@@ -1,38 +1,13 @@
 const chatBtn = document.querySelector(".lhn-chat-btn");
 // const chatbox = document.querySelector('.lhn-chat-container');
 
-const emojiBox = document.querySelector('.lhn-emojis-btn');
-const emojiBoxContainer = document.querySelector('.lhn-emojis-container');
-const chatMenu = document.querySelector(".lhn-chat-properties-menu");
-const chatPropertiesBtn = document.querySelector('.lhn-chat-properties-btn');
-
-// const additionalMenu = document.querySelector(".lhn-chat-container-additional");
-// const closeAdditionalBtn = document.querySelector(".lhn-close-additional")
-
-/** Common */
-
-// Scroll to the bottom of the chat
-const scrollToBottom = () => {
-    const chatBody = document.querySelector(".lhn-inbox");
-    chatBody.scrollTop = chatBody.scrollHeight;
-}
-
-// Toggle Chat Menu (Properties)
-const toggleChatMenu = () => {
-    chatMenu.classList.toggle('lhn-show-menu');
-}
-chatPropertiesBtn.addEventListener('click', toggleChatMenu);
-
-// Toggle Emojis
-const toggleEmojis = (event) => {
-    emojiBoxContainer.classList.toggle('lhn-show-emojis');
-    event.stopPropagation();
-}
-emojiBox.addEventListener('click', toggleEmojis)
+const emojiBox = document.querySelectorAll('.lhn-emojis-btn');
+const emojiBoxContainer = document.querySelectorAll('.lhn-emojis-container');
+const chatMenu = document.querySelectorAll(".lhn-chat-properties-menu");
+const chatPropertiesBtn = document.querySelectorAll('.lhn-chat-properties-btn');
 
 
 /** Classic Mode */
-// Toggle Chat
 const classicChat = document.querySelector('.lhn-chat-container-chatbox-classic');
 const toggleClassicChat = () => {
     classicChat.classList.toggle('lhn-show-classic');
@@ -43,6 +18,7 @@ chatBtn.addEventListener('click', toggleClassicChat)
 // Close Additional Menu
 const classicAdditional = document.querySelector('.lhn-chat-container-additional-classic');
 const closeAdditionalBtn = document.querySelector('.lhn-chat-container-additional-classic-body-form-btns-cancel-button');
+
 // TODO: Temporary btn, need to remove
 const classicAdditionalMenuBtn = document.querySelector(".lhn-additional-btn");
 
@@ -62,4 +38,57 @@ classicAdditionalMenuBtn.addEventListener('click', toggleClassicAdditional);
 
 /** Column Mode */
 
+
 /** Full Screen Mode */
+const closeFullSc = document.querySelector('.lhn-chat-container-chatbox-fullsc-header-top-close');
+const fullScChat = document.querySelector('.lhn-chat-container-chatbox-fullsc')
+
+const toggleFullSc = () => {
+    fullScChat.classList.toggle('lhn-show-fullsc')
+}
+chatBtn.addEventListener('click', toggleFullSc)
+closeFullSc.addEventListener('click', toggleFullSc)
+
+
+/**
+ * Common
+ */
+
+// const modes = document.querySelectorAll('.lhn-chat-container-chatbox-mode');
+// modes.forEach((mode) => {
+//     // The mode that is being used
+//     let modeName = mode.classList[0].split("-")[mode.classList[0].split("-").length - 1];
+//     if (mode.classList.contains('lhn-current-mode')) {
+
+//     }
+// })
+
+// Scroll to the bottom of the chat
+const scrollToBottom = () => {
+    const chatBody = document.querySelectorAll(".lhn-inbox");
+    chatBody.forEach((chat) => {
+        chat.scrollTop = chat.scrollHeight;
+    })
+}
+
+// Toggle Emojis
+const toggleEmojis = (event) => {
+    emojiBoxContainer.forEach((emoji) => {
+        emoji.classList.toggle('lhn-show-emojis')
+    })
+    event.stopPropagation();
+}
+emojiBox.forEach((box) => {
+    box.addEventListener('click', toggleEmojis)
+})
+
+// Toggle Menu / Properties
+const toggleChatMenu = () => {
+    chatMenu.forEach((menu) => {
+        menu.classList.toggle('lhn-show-menu')
+    })
+    
+}
+chatPropertiesBtn.forEach(btn => {
+    btn.addEventListener('click', toggleChatMenu)
+})
