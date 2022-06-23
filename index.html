@@ -366,12 +366,477 @@
                 </div>
 
                 <!-- Column Mode -->
-                <div class="lhn-chat-container-chatbox-column lhn-chat-container-chatbox-mode">
-
+                <div class="lhn-chat-container-chatbox-column lhn-chat-container-chatbox-mode lhn-current-mode">
+                    <div class="lhn-chat-container-chatbox-column-header">
+                        <div class="lhn-chat-container-chatbox-column-header-top">
+                            <div class="lhn-chat-container-chatbox-column-header-top-logo">
+                                <img src="./img/chat-logo-dark.svg" alt="">
+                                <h1>Live Chat</h1>
+                            </div>
+                            <div class="lhn-chat-container-chatbox-column-header-top-btns">
+                                <div class="lhn-chat-container-chatbox-column-header-top-btns-properties lhn-chat-container-chatbox-column-header-top-btns-btn lhn-chat-properties-btn">
+                                    <div class="lhn-chat-container-chatbox-column-header-top-btns-properties-dot"></div>
+                                    <div class="lhn-chat-container-chatbox-column-header-top-btns-properties-dot"></div>
+                                    <div class="lhn-chat-container-chatbox-column-header-top-btns-properties-dot"></div>
+                                    <div class="lhn-chat-container-chatbox-column-header-top-btns-properties-menu lhn-chat-properties-menu">
+                                        <div class="lhn-chat-container-chatbox-column-header-top-btns-properties-menu-element lhn-chat-properties-menu-element">
+                                            <img src="./img/compact.svg" alt="">
+                                            <span>Switch to Classic</span>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-header-top-btns-properties-menu-element lhn-chat-properties-menu-element">
+                                            <img src="./img/compact.svg" alt="">
+                                            <span>Switch to Preview</span>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-header-top-btns-properties-menu-element lhn-chat-properties-menu-element">
+                                            <img src="./img/compact.svg" alt="">
+                                            <span>Switch to Full Screen</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lhn-chat-container-chatbox-column-header-top-btns-close lhn-chat-container-chatbox-column-header-top-btns-btn">
+                                    <img src="./img/close.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lhn-chat-container-chatbox-column-header-bottom">
+                            Let us know if we can help you with anything at all.
+                        </div>
+                    </div>
+                    <div class="lhn-chat-container-chatbox-column-body">
+                        <div class="lhn-chat-container-chatbox-column-body-content lhn-chat-container-chatbox-column-body-chat lhn-active" id="lhn-col-chat">
+                            <div class="lhn-chat-container-chatbox-column-body-content-header">
+                                <div class="lhn-chat-container-chatbox-column-body-content-header-tab lhn-chat-container-chatbox-column-body-content-header-chat lhn-selected-inner-tab">Chat</div>
+                                <div class="lhn-chat-container-chatbox-column-body-content-header-tab lhn-chat-container-chatbox-column-body-content-header-assets">Assets</div>
+                                <div class="lhn-chat-container-chatbox-column-body-content-header-tab lhn-chat-container-chatbox-column-body-content-header-data">Data</div>
+                            </div>
+                            <div class="lhn-chat-container-chatbox-column-body-chat-main">
+                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat lhn-chat-container-chatbox-column-body-chat-main-inner lhn-active-inner" id="lhn-col-inner-chat">
+                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-header">
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-header-top">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-header-top-status"></div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-header-top-title">LiveHelpNow</div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-header-bottom">Connected to an agent</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body lhn-inbox">
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">Hello there!</div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">10:30 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/kenobi.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text">
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-content">
+                                                    General Kenobi!</div>
+                                                <div
+                                                    class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-text-time">
+                                                    10:32 AM</div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message lhn-message-writing lhn-message-reply">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-writing-text">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-writing-text-dot">
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-writing-text-dot">
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-writing-text-dot">
+                                                </div>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-body-message-img">
+                                                <img src="./img/grievous.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional">
+                                        <div data-modal="lhn-chat-modal" class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card">Add Card Information</div>
+                                        <div id="lhn-chat-modal" class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal">
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-header">
+                                                    <h1>Credit Card</h1>
+                                                    <p>Please fill out the following information. All data is encrypted and secured on submission of this form.</p>
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body">
+                                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-header">
+                                                        <h2>Credit Card information</h2>
+                                                    </div>
+                                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-form">
+                                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-form-element">
+                                                            <label for="cardname" class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-form-element-label">Card Name</label>
+                                                            <input type="text" class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-form-element-input" id="cardname">
+                                                        </div>
+                                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-form-element">
+                                                            <label for="cardaddress1">Card Address 1</label>
+                                                            <input type="text" id="cardaddress1">
+                                                        </div>
+                                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-form-element">
+                                                            <label for="cardaddress2">Card Address 2</label>
+                                                            <input type="text" id="cardaddress2">
+                                                        </div>
+                                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-form-element">
+                                                            <label for="city">City</label>
+                                                            <input type="text" id="city">
+                                                        </div>
+                                                    </div>
+                                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-btns">
+                                                        <button type="submit" class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-btns-submit lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-btns-btn">Submit</button>
+                                                        <button class="lhn-modal-exit lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-btns-exit lhn-chat-container-chatbox-column-body-chat-main-chat-additional-card-modal-container-body-btns-btn">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-additional-demo">Get a demo</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-chat-form">
+                                        <input type="text" placeholder="Type something..."
+                                        class="lhn-chat-container-chatbox-column-body-chat-main-chat-form-input lhn-form-input" value="">
+                                        <div
+                                            class="lhn-chat-container-chatbox-column-body-chat-main-chat-form-emojis lhn-emojis-btn lhn-chat-container-chatbox-column-body-chat-main-chat-form-btn">
+                                            <img src="./img/smiley.svg" alt="">
+                                        </div>
+                                        <div
+                                            class="lhn-chat-container-chatbox-column-body-chat-main-chat-form-emojis-container lhn-emojis-container">
+                                        </div>
+                                        <button type="submit"
+                                            class="lhn-chat-container-chatbox-column-body-chat-main-chat-form-submit lhn-chat-container-chatbox-column-body-chat-main-chat-form-btn">
+                                            <img src="./img/submit-arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="lhn-chat-container-chatbox-column-body-chat-main-asset lhn-chat-container-chatbox-column-body-chat-main-inner" id="lhn-col-inner-assets">
+                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-header">
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-header-btn lhn-selected-asset">Photos</div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-header-btn">Videos</div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-header-btn">Pdf</div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body">
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category">
+                                            <p class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-date">Fri, 14 Jan, 2022</p>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content-element">
+                                                    <img src="./img/placeholder.png" alt="">
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content-element">
+                                                    <img src="./img/placeholder.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category">
+                                            <p class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-date">Fri, 14 Jan, 2022</p>
+                                            <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content">
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content-element">
+                                                    <img src="./img/placeholder.png" alt="">
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content-element">
+                                                    <img src="./img/placeholder.png" alt="">
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content-element">
+                                                    <img src="./img/placeholder.png" alt="">
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content-element">
+                                                    <img src="./img/placeholder.png" alt="">
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content-element">
+                                                    <img src="./img/placeholder.png" alt="">
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content-element">
+                                                    <img src="./img/placeholder.png" alt="">
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-column-body-chat-main-asset-body-category-content-element">
+                                                    <img src="./img/placeholder.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lhn-chat-container-chatbox-column-body-chat-main-data lhn-chat-container-chatbox-column-body-chat-main-inner" id="lhn-col-inner-data">
+                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element">
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element-img">
+                                            <img src="./img/creditcard.svg" alt="">
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element-text">
+                                            <h3>Credit Card information</h3>
+                                            <p>Secondary text</p>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element-btn">
+                                            <img src="./img/next.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element">
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element-img">
+                                            <img src="./img/creditcard.svg" alt="">
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element-text">
+                                            <h3>Credit Card information</h3>
+                                            <p>Secondary text</p>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element-btn">
+                                            <img src="./img/next.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element">
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element-img">
+                                            <img src="./img/creditcard.svg" alt="">
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element-text">
+                                            <h3>Credit Card information fdf df df df</h3>
+                                            <p>Secondary text</p>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-column-body-chat-main-data-element-btn">
+                                            <img src="./img/next.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lhn-chat-container-chatbox-column-body-chat-footer">
+                                <div class="lhn-chat-container-chatbox-column-body-chat-footer-copyright">
+                                    <div>Powered by <a href="https://livehelpnow.net/" target="_blank"><img src="./img/lhn-logo.svg" alt="">LiveHelpNow</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lhn-chat-container-chatbox-column-body-content lhn-chat-container-chatbox-column-body-faq" id="lhn-col-faqs">This is FAQ</div>
+                        <div class="lhn-chat-container-chatbox-column-body-content lhn-chat-container-chatbox-column-body-ticket" id="lhn-col-tickets">This is Ticket</div>
+                        <div class="lhn-chat-container-chatbox-column-body-content lhn-chat-container-chatbox-column-body-callback" id="lhn-col-callback">This is callback</div>
+                    </div>
+                    <div class="lhn-chat-container-chatbox-column-footer">
+                        <div class="lhn-chat-container-chatbox-column-footer-tabs">
+                            <div class="lhn-chat-container-chatbox-column-footer-tabs-tab lhn-active-tab">Chat</div>
+                            <div class="lhn-chat-container-chatbox-column-footer-tabs-tab">Faqs</div>
+                            <div class="lhn-chat-container-chatbox-column-footer-tabs-tab">Tickets</div>
+                            <div class="lhn-chat-container-chatbox-column-footer-tabs-tab">Callback</div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Full Screen Mode -->
-                <div class="lhn-chat-container-chatbox-fullsc lhn-chat-container-chatbox-mode lhn-current-mode">
+                <div class="lhn-chat-container-chatbox-fullsc lhn-chat-container-chatbox-mode">
                     <!-- Header -->
                     <div class="lhn-chat-container-chatbox-fullsc-header">
                         <div class="lhn-chat-container-chatbox-fullsc-header-top">
@@ -469,94 +934,6 @@
                                                 <img src="./img/grievous.webp" alt="">
                                             </div>
                                         </div>
-                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message">
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text">
-                                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-content">Hello there!</div>
-                                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-time">10:30 AM</div>
-                                            </div>
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-img">
-                                                <img src="./img/kenobi.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message lhn-message-reply">
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text">
-                                                <div
-                                                    class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-content">
-                                                    General Kenobi!</div>
-                                                <div
-                                                    class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-time">
-                                                    10:32 AM</div>
-                                            </div>
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-img">
-                                                <img src="./img/grievous.webp" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message">
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text">
-                                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-content">Hello there!</div>
-                                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-time">10:30 AM</div>
-                                            </div>
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-img">
-                                                <img src="./img/kenobi.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message lhn-message-reply">
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text">
-                                                <div
-                                                    class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-content">
-                                                    General Kenobi!</div>
-                                                <div
-                                                    class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-time">
-                                                    10:32 AM</div>
-                                            </div>
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-img">
-                                                <img src="./img/grievous.webp" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message">
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text">
-                                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-content">Hello there!</div>
-                                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-time">10:30 AM</div>
-                                            </div>
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-img">
-                                                <img src="./img/kenobi.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message lhn-message-reply">
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text">
-                                                <div
-                                                    class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-content">
-                                                    General Kenobi!</div>
-                                                <div
-                                                    class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-time">
-                                                    10:32 AM</div>
-                                            </div>
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-img">
-                                                <img src="./img/grievous.webp" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message">
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text">
-                                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-content">Hello there!</div>
-                                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-time">10:30 AM</div>
-                                            </div>
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-img">
-                                                <img src="./img/kenobi.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message lhn-message-reply">
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text">
-                                                <div
-                                                    class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-content">
-                                                    General Kenobi!</div>
-                                                <div
-                                                    class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-text-time">
-                                                    10:32 AM</div>
-                                            </div>
-                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-img">
-                                                <img src="./img/grievous.webp" alt="">
-                                            </div>
-                                        </div>
                                         <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message lhn-message-writing lhn-message-reply">
                                             <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-writing-text">
                                                 <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-body-message-writing-text-dot">
@@ -572,7 +949,42 @@
                                         </div>
                                     </div>
                                     <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional">
-                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card">Add Card Information</div>
+                                        <div data-modal="lhn-chat-modal" class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card">Add Card Information</div>
+                                        <div id="lhn-chat-modal" class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal">
+                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container">
+                                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-header">
+                                                    <h1>Credit Card</h1>
+                                                    <p>Please fill out the following information. All data is encrypted and secured on submission of this form.</p>
+                                                </div>
+                                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body">
+                                                    <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-header">
+                                                        <h2>Credit Card information</h2>
+                                                    </div>
+                                                    <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-form">
+                                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-form-element">
+                                                            <label for="cardname" class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-form-element-label">Card Name</label>
+                                                            <input type="text" class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-form-element-input" id="cardname">
+                                                        </div>
+                                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-form-element">
+                                                            <label for="cardaddress1">Card Address 1</label>
+                                                            <input type="text" id="cardaddress1">
+                                                        </div>
+                                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-form-element">
+                                                            <label for="cardaddress2">Card Address 2</label>
+                                                            <input type="text" id="cardaddress2">
+                                                        </div>
+                                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-form-element">
+                                                            <label for="city">City</label>
+                                                            <input type="text" id="city">
+                                                        </div>
+                                                    </div>
+                                                    <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-btns">
+                                                        <button type="submit" class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-btns-submit lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-btns-btn">Submit</button>
+                                                        <button class="lhn-modal-exit lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-btns-exit lhn-chat-container-chatbox-fullsc-body-chat-main-chat-additional-card-modal-container-body-btns-btn">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-form">
                                         <input type="text" placeholder="Type something..." class="lhn-chat-container-chatbox-fullsc-body-chat-main-chat-form-input lhn-form-input" value="">
@@ -587,7 +999,46 @@
                                     </div>
                                 </div>
                                 <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-asset lhn-chat-container-chatbox-fullsc-body-chat-main-inner" id="lhn-fc-inner-assets">These are Assets</div>
-                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-asset lhn-chat-container-chatbox-fullsc-body-chat-main-inner" id="lhn-fc-inner-data">These are Data</div>
+                                <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data lhn-chat-container-chatbox-fullsc-body-chat-main-inner" id="lhn-fc-inner-data">
+                                    <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container">
+                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element">
+                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element-img">
+                                                <img src="./img/creditcard.svg" alt="">
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element-text">
+                                                <h3>Credit Card information</h3>
+                                                <p>Secondary text</p>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element-btn">
+                                                <img src="./img/next.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element">
+                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element-img">
+                                                <img src="./img/creditcard.svg" alt="">
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element-text">
+                                                <h3>Credit Card information</h3>
+                                                <p>Secondary text</p>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element-btn">
+                                                <img src="./img/next.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element">
+                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element-img">
+                                                <img src="./img/creditcard.svg" alt="">
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element-text">
+                                                <h3>Credit Card information</h3>
+                                                <p>Secondary text</p>
+                                            </div>
+                                            <div class="lhn-chat-container-chatbox-fullsc-body-chat-main-data-container-element-btn">
+                                                <img src="./img/next.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="lhn-chat-container-chatbox-fullsc-body-content lhn-chat-container-chatbox-fullsc-body-faq" id="lhn-fc-faqs">This is FAQ</div>
@@ -688,5 +1139,6 @@
 <script src="./js/emoji.js" type="module"></script>
 <script src="./js/tabs.js"></script>
 <script src="./js/modes.js"></script>
+<script src="./js/modal.js"></script>
 
 </html>

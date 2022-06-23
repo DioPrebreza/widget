@@ -1,5 +1,5 @@
 const chatBtn = document.querySelector(".lhn-chat-btn");
-// const chatbox = document.querySelector('.lhn-chat-container');
+const chatbox = document.querySelector('.lhn-chat-container');
 
 const emojiBox = document.querySelectorAll('.lhn-emojis-btn');
 const emojiBoxContainer = document.querySelectorAll('.lhn-emojis-container');
@@ -37,8 +37,23 @@ classicAdditionalMenuBtn.addEventListener('click', toggleClassicAdditional);
 /** Preview Mode */
 
 /** Column Mode */
+const closeColumnBtn = document.querySelector('.lhn-chat-container-chatbox-column-header-top-btns-close');
+const columnChat = document.querySelector('.lhn-chat-container-chatbox-column');
 
+const closeColumn = () => {
+    columnChat.classList.remove('lhn-show-column');
+    chatbox.style.display = 'none';
+    chatBtn.style.display = 'block'
+}
 
+const openColumn = () => {
+    columnChat.classList.add('lhn-show-column');
+    chatbox.style.display = 'block';
+    chatBtn.style.display = 'none'
+}
+
+closeColumnBtn.addEventListener('click', closeColumn);
+chatBtn.addEventListener('click', openColumn);
 /** Full Screen Mode */
 const closeFullSc = document.querySelector('.lhn-chat-container-chatbox-fullsc-header-top-close');
 const fullScChat = document.querySelector('.lhn-chat-container-chatbox-fullsc')
@@ -54,19 +69,25 @@ closeFullSc.addEventListener('click', toggleFullSc)
  * Common
  */
 
-// const modes = document.querySelectorAll('.lhn-chat-container-chatbox-mode');
-// modes.forEach((mode) => {
-//     // The mode that is being used
-//     let modeName = mode.classList[0].split("-")[mode.classList[0].split("-").length - 1];
-//     if (mode.classList.contains('lhn-current-mode')) {
-
-//     }
-// })
+const allModes = document.querySelectorAll('.lhn-chat-container-chatbox-mode');
+allModes.forEach((mode) => {
+    // The mode that is being used
+    let modeName = mode.classList[0].split("-")[mode.classList[0].split("-").length - 1];
+    if (mode.classList.contains('lhn-current-mode')) {
+        if (modeName == 'column') {
+            chatbox.style.display = 'none';
+            document.querySelector("body").style.display = 'flex';
+            document.querySelector(".lhn-chat-container").style.position = 'unset';
+        }
+    }
+})
 
 // Scroll to the bottom of the chat
 const scrollToBottom = () => {
     const chatBody = document.querySelectorAll(".lhn-inbox");
+    // console.log(chatBody);
     chatBody.forEach((chat) => {
+        // console.log(chat);
         chat.scrollTop = chat.scrollHeight;
     })
 }
@@ -85,6 +106,7 @@ emojiBox.forEach((box) => {
 // Toggle Menu / Properties
 const toggleChatMenu = () => {
     chatMenu.forEach((menu) => {
+        console.log(menu.classList);
         menu.classList.toggle('lhn-show-menu')
     })
     
