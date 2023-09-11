@@ -1,17 +1,19 @@
-const modals = document.querySelectorAll('[data-modal]');
+//* This part is not used anymore! A.R
 
-modals.forEach((trigger) => {
-    const modal = document.getElementById(trigger.dataset.modal);
-    trigger.addEventListener('click', (event) => {
-        event.preventDefault();
-        modal.classList.add('lhn-open-modal');
+// const modals = document.querySelectorAll('[data-modal]');
 
-        const exits = modal.querySelectorAll('.lhn-modal-exit');
-        exits.forEach((exit) => {
-            exit.addEventListener('click', (event) => {
-                event.preventDefault();
-                modal.classList.remove('lhn-open-modal');
-            })
-        })
-    })
-})
+// modals.forEach((trigger) => {
+//     const modal = document.getElementById(trigger.dataset.modal);
+//     trigger.addEventListener('click', (event) => {
+//         event.preventDefault();
+//         modal.classList.add('he-open-modal');
+
+//         const exits = modal.querySelectorAll('.he-modal-exit');
+//         exits.forEach((exit) => {
+//             exit.addEventListener('click', (event) => {
+//                 event.preventDefault();
+//                 modal.classList.remove('he-open-modal');
+//             })
+//         })
+//     })
+// })

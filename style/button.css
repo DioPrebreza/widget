@@ -1,33 +1,24 @@
-.lhn-chat-btn {
+.he-chat-btn {
   border-radius: 50%;
   width: 60px;
   height: 60px;
   position: relative;
 }
-
-.lhn-chat-btn button {
+.he-chat-btn button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   border: none;
   background-color: #1587B9;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
-.lhn-chat-btn button img {
-  width: 27px;
+.he-chat-btn button img {
+  width: 35px;
 }
-
-.lhn-chat-btn-notification {
+.he-chat-btn-notification {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -37,23 +28,14 @@
   right: -5px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
-
-.lhn-chat-btn-entries {
+.he-chat-btn-entries {
   background-color: #FF0000;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 13px;
   font-weight: 600;
-}
-/*# sourceMappingURL=button.css.map */
+}/*# sourceMappingURL=button.css.map */

@@ -1,43 +1,53 @@
-const menu = document.querySelectorAll(".lhn-chat-properties-menu-element");
+const menuItems = document.querySelectorAll(".he-chat-properties-menu-element");
+const chatbtn = document.querySelector(".he-chat-btn");
+const chatInboxes = document.querySelectorAll(".he-inbox");
+const modes = document.querySelectorAll('.he-chat-container-chatbox-mode');
 
-// console.log(menu);
-
-const modes = document.querySelectorAll('.lhn-chat-container-chatbox-mode');
-
+const scrollChatToBottom = () => {
+  chatInboxes.forEach((chat) => {
+    chat.scrollTop = chat.scrollHeight;
+  });
+}
 
 const changeToMode = (modeName) => {
-    modes.forEach((mode) => {
-        // console.log(mode.classList);
-        mode.classList.forEach((cl) => {
-            if (cl.includes(modeName.toLowerCase())) {
-                mode.classList.add('lhn-current-mode')
-                console.log(mode);
-            }
-        })
-    })
-    // console.log(mode.toLowerCase());
+  const normalizedModeName = modeName.toLowerCase();
 
-}
-modes.forEach((mode) => {
-    // The mode that is being used
-    let modeName = mode.classList[0].split("-")[mode.classList[0].split("-").length - 1];
-
-    if (mode.classList.contains('lhn-current-mode')) {
-        menu.forEach((m) => {
-            m.classList.forEach((cl) => {
-                if (cl.includes(modeName)) {
-                    m.addEventListener('click', (e) => {
-                        const name = e.target.innerHTML.split(" ");
-                        if (name.length == 3) {
-                            changeToMode(name[name.length - 1])
-                        } else {
-                            console.log(name[name.length - 2] + name[name.length - 1]);
-                            // changeToMode(name[name.length - 2] + name[name.length - 1])
-                        }
-                        mode.classList.remove('lhn-current-mode')
-                    })
-                }
-            })
-        })
+  modes.forEach((mode) => {
+    if (Array.from(mode.classList).some((cl) => cl.includes(normalizedModeName))) {
+      mode.classList.add('he-current-mode');
     }
-})
+  });
+
+  getMode();
+  scrollChatToBottom();
+}
+
+const handleMenuItemClick = (e, modeName) => {
+  const nameParts = e.target.innerHTML.split(" ");
+  const newModeName = nameParts[nameParts.length - 1].toLowerCase();
+
+  changeToMode(newModeName);
+  modeName === 'column' ? (chatbtn.style.display = 'block') : (chatbtn.style.display = 'none');
+}
+
+const getMode = () => {
+  modes.forEach((mode) => {
+    const modeClassNameParts = mode.classList[0].split("-");
+    const modeName = modeClassNameParts[modeClassNameParts.length - 1];
+
+    if (mode.classList.contains('he-current-mode')) {
+      menuItems.forEach((menuItem) => {
+        menuItem.classList.forEach((menuItemClass) => {
+          if (menuItemClass.includes(modeName)) {
+            menuItem.addEventListener('click', (e) => {
+              handleMenuItemClick(e, modeName);
+              mode.classList.remove('he-current-mode');
+            });
+          }
+        });
+      });
+    }
+  });
+}
+
+getMode();
